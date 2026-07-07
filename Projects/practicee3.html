@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato - Food Delivery App</title>
+
+    <style>
+        /* Global reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header{
+            background: rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1{
+            margin-bottom: 15px;
+            font-size: 2.3rem;
+        }
+
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        nav img{
+            height: 80px;
+            border-radius: 10px;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover{
+            color: #fff3b0;
+            transform: scale(1.1);
+        }
+
+        main{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .content{
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(12px);
+            padding: 35px;
+            border-radius: 25px;
+            max-width: 800px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .content p{
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        h2{
+            margin-top: 25px;
+            font-size: 2rem;
+            color: #fff3b0;
+        }
+
+        .btn{
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 28px;
+            background: white;
+            color: #ff5e78;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover{
+            background: #fff3b0;
+            color: #ff5e78;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        footer{
+            background: rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 600px){
+            header h1{
+                font-size: 1.8rem;
+            }
+
+            .content{
+                padding: 25px;
+            }
+
+            .content p{
+                font-size: 16px;
+            }
+
+            h2{
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🍽️ Zomato - Deliver Food at Your Doorstep</h1>
+
+        <nav>
+            <a href="https://www.zomato.com/kanpur/restaurants">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png"
+                     alt="Zomato Logo">
+            </a>
+
+            <a href="https://en.wikipedia.org/wiki/Zomato">About</a>
+            <a href="https://www.zomato.com/ncr/hot-line-24x7-2-sector-39-gurgaon">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <p>
+                Zomato is a leading Indian food-tech company and restaurant
+                aggregator that connects users, restaurant partners, and
+                delivery personnel. Founded in 2008 by Deepinder Goyal and
+                Pankaj Chaddah, it provides online food delivery, dining-out
+                guides, table reservations, and B2B ingredient supplies
+                through Hyperpure.
+            </p>
+
+            <h2>🍕 Deliver Your Food From Home, Anytime!</h2>
+
+            <a href="https://www.zomato.com" class="btn">
+                Order Now
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        Copyright © 2024 Zomato. All rights reserved.
+    </footer>
+
+</body>
+</html>
